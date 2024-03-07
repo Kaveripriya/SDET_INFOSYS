@@ -1,0 +1,19 @@
+Table: products
+
+| ProductID | ProductName | Category   | Price |
+|-----------|-------------|------------|-------|
+| 101       | Laptop      | Electronics| 1200  |
+| 102       | Smartphone  | Electronics| 800   |
+| 103       | T-shirt     | Clothing   | 20    |
+| 104       | Jeans       | Clothing   | 50    |
+| 105       | Book        | Books      | 15    |
+List of Queries:
+
+1. Retrieve the ProductID, ProductName, and Price columns from the products table.
+2. Retrieve all columns from the products table.
+3. Insert a new record with specified values into the products table.
+4. Insert a new record with only the ProductName and Price columns specified.
+5. Update the Price for a specific product in the products table.
+6. Delete a specific product from the products table based on the ProductID.
+7. Delete all records from the products table.
+8. DELETE FROM products;
