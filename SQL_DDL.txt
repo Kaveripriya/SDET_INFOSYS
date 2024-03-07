@@ -1,0 +1,154 @@
+1. Create a Database
+Syntax:
+
+Create Database databaseName;
+
+Example:
+
+Create Database gcreddyDB;
+
+2. Use Database
+Syntax
+
+Use databaseName;
+
+Example:
+
+Use gcreddyDB;
+
+3. Rename a Database
+Syntax
+
+Alter Database databaseName Modify Name = newdatabseName;
+
+Example:
+
+Alter Database gcreddyDB Modify Name = hyderabad
+
+Or
+
+Alter Database gcreddyDB
+Modify Name = hyderabad
+
+4. Drop a Database
+Syntax:
+
+Drop Database databaseName;
+
+Example:
+
+Drop Database gcreddyDB;
+
+5. Create a Table
+Syntax:
+
+Create Table tableName
+(
+column1_name dataType(size),
+column2_name dataType(size),
+.
+.
+.
+);
+
+Example:
+
+Create Table Students
+(
+STID int,
+STName char(50),
+);
+————————–
+View Table info
+Select * from Students
+
+View Table Schema
+Select * from INFORMATION_SCHEMA.COLUMNS where TABLE_NAME = ‘Students’;
+
+6. Rename Table
+Syntax:
+
+EXEC sp_rename ‘old_tablename’, ‘new_tablename’;
+
+Example:
+
+EXEC sp_rename ‘Students’, ‘newStudents’;
+
+7. Add a Column to the existing Table
+Syntax:
+
+Alter Table table_name add column_name dataType(size);
+
+Example:
+Alter Table newStudents add City char(50);
+
+8. Add multiple columns to an existing Table
+Syntax:
+
+Alter Table table_name add column1_name dataType(size), column2_name dataType(size);
+
+Or
+Alter Table table_name add
+column1_name dataType(size),
+column2_name dataType(size),
+.
+.;
+
+Example:
+
+Alter Table newStudents add add1 char(100), add2 char(70);
+
+Or
+
+Alter Table newStudents add
+add3 char(100),
+add4 char(70),
+add5 char (100),
+phone int;
+
+9. Modify an existing column
+Syntax:
+
+Alter Table table_name Alter Column column_name dataType(size);
+
+Example:
+
+Alter Table newStudents Alter Column add1 varchar(150);
+
+10. Rename a Column
+Syntax:
+
+EXEC sp_rename ‘table_name.old_column_name’, ‘new_colum_name’;
+
+Example:
+ExEC sp_rename ‘newStudents.phone’, ‘mobile’
+
+11. Drop a Column
+Syntax:
+
+Alter Table table_name Drop Column column_name;
+
+Example:
+
+Alter Table newStudents Drop Column City;
+
+12. Truncate a Table
+Truncate Table command is used to delete complete data from an existing table
+
+Syntax:
+
+Truncate Table table_name;
+
+Example:
+
+Truncate Table newstudents;
+
+13. Drop a Table
+Drop Table command is used to delete the complete Table (Data and Table Structure) from the Database.
+
+Syntax:
+
+Drop Table table_name;
+
+Example:
+Drop Table newStudents;
