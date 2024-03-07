@@ -1,0 +1,90 @@
+1. Arithmetic Operators:
+Arithmetic operators can perform arithmetical operations on numeric operands involved.
+
+Operator Description
+
++                  Add
+–                  Subtract
+*                  Multiply
+/                  Division
+%                Modulus
+
+Examples:
+
+i. Add (+)
+SELECT 30 + 20;
+
+ii. Subtract (-)
+SELECT 30 – 20;
+
+iii. Multiply (*)
+Select 30 * 20;
+
+iv. Division
+Select 40 / 20;
+
+v. Modulus (%)
+Select 40 % 19;
+
+2. Comparison Operators:
+A comparison (or relational) operator is a mathematical symbol that is used to compare between two values.
+
+Comparison operators are used in conditions that compare one expression with another. The result of a comparison can be TRUE, FALSE, or UNKNOWN (an operator that has one or two NULL expressions returns UNKNOWN).
+
+The following table describes different types of comparison operators
+
+Operator Description
+
+=                  Equal to
+>                  Greater than
+<                  Less than
+>=                Greater than or equal to
+<=               Less than or equal to
+<>               Not equal to
+
+Examples:
+
+i. Select * From abcd
+Where City=’Pune’;
+
+ii. Select * From abcd
+Where Age > 25;
+
+iii. Select * From abcd
+Where Age >= 25;
+
+iv. Select * From abcd
+Where Age < 25;
+
+v. Select * From abcd
+Where Age <= 25;
+
+vi. Select * From abcd
+Where Age <> 25;
+
+3. Logical Operators:
+There are three Logical Operators namely, AND, OR, and NOT. These operators compare two conditions at a time to determine whether a row can be selected for the output. When retrieving data using a SELECT statement, You can use logical operators in the WHERE clause, which allows you to combine more than one condition.
+
+Operator	Description
+ALL TRUE	if all of the sub-query values meet the condition
+AND TRUE	if all the conditions separated by AND is TRUE
+ANY  TRUE	if any of the sub-query values meet the condition
+BETWEEN TRUE	if the operand is within the range of comparisons
+EXISTS TRUE	if the sub-query returns one or more records
+IN TRUE	if the operand is equal to one of a list of expressions
+LIKE TRUE	if the operand matches a pattern Try it
+NOT	 Displays a record if the condition(s) is NOT TRUE
+OR TRUE	 if any of the conditions separated by OR is TRUE
+SOME TRUE	 if any of the sub-query values meet the condition
+Examples:
+
+i. And
+Select * From abcd
+Where Age > 25 And City =’Hyderabad’;
+
+ii. Or
+Select * From abcd
+Where Age > 40 Or City =’Pune’;
+
+iii. Between
+Select * From abcd
