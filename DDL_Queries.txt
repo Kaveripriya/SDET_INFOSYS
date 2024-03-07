@@ -1,0 +1,24 @@
+Students:
+
+| STID | STName   | City     | Age |
+|------|----------|----------|-----|
+| 1    | John     | New York | 20  |
+| 2    | Alice    | Chicago  | 22  |
+| 3    | Bob      | Boston   | 21  |
+| 4    | Emily    | Seattle  | 23  |
+| 5    | Michael  | Miami    | 24  |
+
+
+Queries:
+
+List of Queries:
+
+1. Create a new database named School.
+2. Use the School database.
+3. Rename the Students table to Classmates.
+4. Add a new column named Grade of data type int to the Classmates table.
+5. Modify the Age column to have a data type of smallint in the Classmates table.
+6. Rename the Age column to StudentAge in the Classmates table.
+7. Drop the City column from the Classmates table.
+Truncate the data in the Classmates table.
+Drop the Classmates table.
