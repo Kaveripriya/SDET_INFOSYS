@@ -20,5 +20,5 @@ List of Queries:
 5. Modify the Age column to have a data type of smallint in the Classmates table.
 6. Rename the Age column to StudentAge in the Classmates table.
 7. Drop the City column from the Classmates table.
-Truncate the data in the Classmates table.
-Drop the Classmates table.
+8. Truncate the data in the Classmates table.
+9. Drop the Classmates table.
