@@ -1,0 +1,18 @@
+Table: employees
+
+| EmployeeID | FirstName | LastName | Department   | Salary |
+|------------|-----------|----------|--------------|--------|
+| 101        | John      | Smith    | Engineering  | 60000  |
+| 102        | Alice     | Johnson  | Marketing    | 55000  |
+| 103        | Bob       | Williams | Human Resources | 50000 |
+
+Queries:
+
+1. Retrieve the EmployeeID, FirstName, and LastName columns from the employees table.
+2. Retrieve all columns from the employees table.
+3. Insert a new record with specified values into the employees table.
+4. Insert a new record with only the FirstName and Department columns specified.
+5. Update the Salary for a specific employee in the employees table.
+6. Delete a specific employee from the employees table based on the EmployeeID.
+7. DELETE FROM employees WHERE EmployeeID = 103;
+8. Delete all records from the employees table.
