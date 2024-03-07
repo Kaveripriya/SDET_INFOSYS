@@ -1,0 +1,61 @@
+The SELECT Statement is used to select data from a database. The result is stored in a result table, called the result-set.
+
+The SELECT command is the most commonly used command in SQL. It allows database users to retrieve the specific information they desire from an operational database.
+
+/* Select Syntax
+
+Select colomn1, column2, …
+From Table_Name;
+
+Select * From Table_Name; */
+
+Select Id, Name From abcd;
+
+Select * From abcd;
+
+2. Insert:
+The INSERT INTO Statement is used to insert new records in a table. We can insert data to a table in two ways,
+
+Syntax
+INSERT INTO table_name (column1, column2 …)
+VALUES (value1, value2, …);
+
+Example:
+Insert Into abcd (Id, Name, City)
+values(4, ‘Vijaya’, ‘Kavali’);
+—————–
+Insert Data Only in Specified Columns
+
+Insert Into abcd (Name)
+values (‘Cinnu’);
+Note: If you insert a specified column only then the remaining columns are Null…
+
+3. Update:
+The UPDATE statement is used to update existing records in a table.
+
+Syntax:
+
+UPDATE table_name
+
+SET column1=value, column2=value2,…
+WHERE some_column=some_value
+
+Example:
+
+Update abcd
+Set Name = ‘Venkat’, City = ‘Mumbai’
+Where Id = 1;
+
+4. Delete:
+The SQL DELETE Query is used to delete the existing records from a table. You can use the WHERE clause with the DELETE query to delete selected rows, otherwise, all the records would be deleted.
+
+Syntax:
+
+DELETE FROM table_name [WHERE condition];
+
+Example:
+
+Delete From abcd
+Where Id = 4;
+
+Delete From abcd;
